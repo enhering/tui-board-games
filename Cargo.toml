@@ -1,0 +1,24 @@
+[workspace]
+resolver = "2"
+members = ["core", "games", "net", "client"]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+authors = [
+    "Kiro (AI coding agent) <https://kiro.dev>",
+    "Eduardo Hering (@enhering) — direction & review",
+]
+description = "A terminal (TUI) framework for multiplayer board games — Checkers, Chess, Go, and the original Siege. Built entirely by the Kiro AI agent."
+repository = "https://github.com/enhering/tui-board-games"
+homepage = "https://github.com/enhering/tui-board-games"
+readme = "README.md"
+keywords = ["game", "tui", "board-game", "multiplayer", "terminal"]
+categories = ["games", "command-line-utilities"]
+rust-version = "1.74"
+
+[workspace.dependencies]
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+anyhow = "1"

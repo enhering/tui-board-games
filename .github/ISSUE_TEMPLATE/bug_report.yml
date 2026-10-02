@@ -1,0 +1,51 @@
+name: Bug report
+description: Report a problem with a game, the client, or the server
+labels: ["bug"]
+body:
+  - type: dropdown
+    id: game
+    attributes:
+      label: Which game?
+      options:
+        - Checkers
+        - Chess
+        - Go
+        - Siege
+        - Not game-specific (client/server)
+    validations:
+      required: true
+  - type: dropdown
+    id: mode
+    attributes:
+      label: Mode
+      options:
+        - Offline hot-seat
+        - Online (server)
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Start `tbg --game Chess`
+        2. Select ...
+        3. Press ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected vs. actual behavior
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version / commit
+      placeholder: "0.1.0 or git SHA"
+  - type: textarea
+    id: env
+    attributes:
+      label: Environment
+      placeholder: "OS, terminal, Rust version (rustc --version)"

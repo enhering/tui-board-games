@@ -1,0 +1,24 @@
+[package]
+name = "tbg-client"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+authors.workspace = true
+repository.workspace = true
+homepage.workspace = true
+keywords.workspace = true
+categories.workspace = true
+rust-version.workspace = true
+description = "Terminal (TUI) client for the tui-board-games framework."
+
+[dependencies]
+tbg-core = { path = "../core" }
+tbg-games = { path = "../games" }
+tbg-net = { path = "../net" }
+anyhow = { workspace = true }
+ratatui = "0.28"
+crossterm = "0.28"
+
+[[bin]]
+name = "tbg"
+path = "src/main.rs"

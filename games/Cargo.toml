@@ -1,0 +1,15 @@
+[package]
+name = "tbg-games"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+authors.workspace = true
+repository.workspace = true
+homepage.workspace = true
+keywords.workspace = true
+categories.workspace = true
+rust-version.workspace = true
+description = "Game implementations (Checkers, Chess, Go, Siege) for the tui-board-games framework."
+
+[dependencies]
+tbg-core = { path = "../core" }

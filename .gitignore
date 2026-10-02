@@ -1,0 +1,15 @@
+# Rust build output
+/target
+
+# This project ships binaries (tbg, tbg-server), so Cargo.lock IS committed
+# for reproducible builds. Do not ignore it.
+
+# Editor / IDE
+*.swp
+*.swo
+.idea/
+.vscode/
+
+# OS cruft
+.DS_Store
+Thumbs.db

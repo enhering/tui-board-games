@@ -1,0 +1,21 @@
+name: Feature request
+description: Suggest a new game, feature, or improvement
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: What would you like to see?
+      placeholder: "A new game, a UI feature, a networking improvement, ..."
+    validations:
+      required: true
+  - type: textarea
+    id: motivation
+    attributes:
+      label: Why is it useful?
+  - type: checkboxes
+    id: new-game
+    attributes:
+      label: Is this a new game?
+      options:
+        - label: "Yes — I've read HOW_TO_ADD_A_GAME.md"
