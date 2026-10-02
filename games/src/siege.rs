@@ -1,5 +1,9 @@
 //! Siege — an original game built on `tbg-core`.
 //!
+//! Original game design and implementation by Kiro (an AI coding agent),
+//! created in response to an open-ended "be creative" request. The concept,
+//! name, rules, and code are Kiro's own.
+//!
 //! Siege is a game of **conversion**, not capture. You win by turning the
 //! enemy army against itself until the opponent has no soldiers left.
 //!

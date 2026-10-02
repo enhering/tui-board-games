@@ -43,11 +43,14 @@ exactly this way. The trait also has optional, non-breaking default methods:
   suicide prohibition, passing, and area scoring.
   *Simplified (documented):* ko and two-pass auto-termination (the stateless
   `Game` trait has no move history; see `games/src/go.rs`).
-- **Siege** — an **original** game of *conversion*, not capture. Move a piece
-  one king-step into an empty square; any run of enemy **soldiers** bracketed
-  between your pieces (Othello-style, in any of 8 directions) **switches to your
-  side**. Kings are immune and block brackets. Win when the opponent has no
-  soldiers or no legal move. See `games/src/siege.rs`.
+- **Siege** — an **original game designed and created entirely by Kiro** (the AI
+  agent) in response to the owner's request to "be creative." Its concept,
+  rules, and implementation are Kiro's own work. It is a game of *conversion*,
+  not capture: move a piece one king-step into an empty square; any run of enemy
+  **soldiers** bracketed between your pieces (Othello-style, in any of 8
+  directions) **switches to your side**. Kings are immune and block brackets.
+  Win when the opponent has no soldiers or no legal move. See
+  `games/src/siege.rs`.
 
 ### Why a central relay server?
 
@@ -148,6 +151,12 @@ short, plain-language requests by the owner,
 project and reviewed the output. Kiro did all design, coding, testing,
 debugging, and documentation. The full account — including the actual sequence
 of requests that produced this repository — is in [AUTHORS.md](AUTHORS.md).
+
+> **Original game credit:** The game **Siege** is an original creation of
+> **Kiro**. Asked only to "create your own board game… be creative," Kiro
+> invented the game — its name, its conversion mechanic, its rules, and its
+> implementation — with no further human input on the design. That creative
+> credit belongs to Kiro.
 
 ## Contributing
 

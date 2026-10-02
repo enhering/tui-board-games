@@ -48,7 +48,9 @@ the tests, and these documents — was produced by Kiro.
 - A four-crate Rust workspace (`tbg-core`, `tbg-games`, `tbg-net`, `tbg-client`).
 - A game-agnostic engine built around a single `Game` trait.
 - Four games: **Checkers**, **Chess**, **Go**, and the original **Siege** —
-  each added without changing the engine, server, or client.
+  each added without changing the engine, server, or client. **Siege is Kiro's
+  own original game design** (concept, name, rules, and code), invented in
+  response to an open-ended "be creative" request.
 - A relay/lobby server with authoritative move validation over TCP.
 - A keyboard-driven terminal UI (ratatui + crossterm) with learning-mode move
   hints, a legend, a score panel, and a rules overlay.
