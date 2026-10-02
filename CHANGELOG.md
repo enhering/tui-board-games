@@ -9,15 +9,15 @@ direction — see [AUTHORS.md](AUTHORS.md).
 
 ## [Unreleased]
 
+_Nothing yet._
+
+## [0.1.0]
+
 ### Added
 - Open-source publishing files: `LICENSE` (MIT), `AUTHORS.md`, `CONTRIBUTING.md`,
   this `CHANGELOG.md`, GitHub Actions CI, and issue/PR templates.
 - Package metadata (description, repository, keywords, categories, authors) for
   all crates.
-
-## [0.1.0]
-
-### Added
 - **Workspace & engine**: four-crate Cargo workspace (`tbg-core`, `tbg-games`,
   `tbg-net`, `tbg-client`) with a game-agnostic `Game` trait at the core.
 - **Checkers**: the first game — diagonal moves, mandatory jumps, promotion.
